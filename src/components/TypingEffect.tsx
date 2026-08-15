@@ -3,10 +3,10 @@
 import { useEffect, useRef } from 'react';
 
 const phrases = [
-  'Qualidade e segurança para sua equipe',
-  'Proteção completa para sua empresa',
-  'Equipamentos certificados e confiáveis',
-  'Soluções em EPI para cada necessidade',
+  'qualidade e segurança para sua equipe',
+  'proteção completa para sua empresa',
+  'equipamentos certificados e confiáveis',
+  'soluções em EPI para cada necessidade',
 ];
 
 export default function TypingEffect() {
