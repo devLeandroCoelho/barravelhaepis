@@ -70,8 +70,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
               <div className="text-3xl mb-3">🚚</div>
-              <h3 className="font-bold text-[#0B1E2F] mb-2">Entrega rápida</h3>
-              <p className="text-gray-600 text-sm">Atendimento ágil para sua equipe não parar</p>
+              <h3 className="font-bold text-[#0B1E2F] mb-2">Produtos de qualidade</h3>
+              <p className="text-gray-600 text-sm">Equipamentos certificados e confiáveis</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
               <div className="text-3xl mb-3">💰</div>
