@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div>
               <p className="font-medium mb-1">Horário</p>
-              <div className="grid grid-cols-3 gap-6 text-left">
+              <div className="grid grid-cols-3 gap-12 text-left">
                 <div>
                   <p className="text-sm font-semibold whitespace-nowrap">SEG-SEX:</p>
                   <p className="text-sm whitespace-nowrap">07:30 às 12:00</p>
