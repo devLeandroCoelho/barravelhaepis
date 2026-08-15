@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* Localização */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section id="localizacao" className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-[#0B1E2F] text-center mb-10">Onde estamos</h2>
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
@@ -132,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* Contato */}
-      <section className="py-16 px-4 bg-[#0B1E2F] text-white">
+      <section id="contato" className="py-16 px-4 bg-[#0B1E2F] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold mb-6">Contato</h2>
           <div className="grid md:grid-cols-3 gap-6 mb-8">
