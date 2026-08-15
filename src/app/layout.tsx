@@ -9,6 +9,15 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Barra Velha EPIs — Equipamentos de Proteção Individual',
   description: 'Distribuidora de EPIs em Barra Velha. Qualidade e segurança para sua equipe.',
+  icons: {
+    icon: '/logo-barravelhaepis.png',
+  },
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
