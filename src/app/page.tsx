@@ -146,7 +146,9 @@ export default function Home() {
             </div>
             <div>
               <p className="font-medium mb-1">Horário</p>
-              <p>Seg a Sex — 8h às 18h</p>
+              <p>Seg a Sex — 07:30 às 12:00 e 13:15 às 17:30</p>
+              <p>Sábado — 07:30 às 12:00</p>
+              <p>Domingo — Fechado</p>
             </div>
           </div>
         </div>
