@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import TypingEffect from '@/components/TypingEffect';
+import ProductsGrid from '@/components/ProductsGrid';
 
 export default function Home() {
   return (
@@ -39,24 +40,12 @@ export default function Home() {
       {/* Produtos */}
       <section id="produtos" className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-[#0B1E2F] text-center mb-10">Nossos Produtos</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { icon: '⛑️', name: 'Capacetes' },
-              { icon: '🧤', name: 'Luvas' },
-              { icon: '😷', name: 'Máscaras' },
-              { icon: '👓', name: 'Óculos' },
-              { icon: '👕', name: 'Uniformes' },
-              { icon: '👟', name: 'Calçados' },
-              { icon: '🦺', name: 'Colete' },
-              { icon: '🛡️', name: 'Protetores' },
-            ].map((item, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-xl p-6 text-center hover:shadow-md transition-shadow">
-                <div className="text-4xl mb-2">{item.icon}</div>
-                <p className="font-medium text-gray-800">{item.name}</p>
-              </div>
-            ))}
-          </div>
+          <h2 className="text-2xl font-bold text-[#0B1E2F] text-center mb-4">Nossos Produtos</h2>
+          <p className="text-gray-600 text-center mb-10">
+            Distribuidora de EPIs em Barra Velha com capacetes, luvas, máscaras, óculos, uniformes, calçados, coletes e protetores.
+            Equipamentos de proteção individual para empresas e profissionais da região.
+          </p>
+          <ProductsGrid />
           <div className="mt-10 text-center">
             <a href="/catalogo-barravelhaepis.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#0B1E2F] hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-lg transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -70,7 +59,11 @@ export default function Home() {
       {/* Diferenciais */}
       <section id="diferenciais" className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-[#0B1E2F] text-center mb-10">Por que escolher a Barra Velha EPIs?</h2>
+          <h2 className="text-2xl font-bold text-[#0B1E2F] text-center mb-4">Por que escolher a Barra Velha EPIs?</h2>
+          <p className="text-gray-600 text-center mb-10">
+            Distribuidora de EPIs em Barra Velha com atendimento para empresas e profissionais da região.
+            Qualidade, preço justo e atendimento local em Santa Catarina.
+          </p>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
               <div className="text-3xl mb-3">🚚</div>
@@ -113,7 +106,11 @@ export default function Home() {
       {/* Localização */}
       <section id="localizacao" className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-[#0B1E2F] text-center mb-10">Onde estamos</h2>
+          <h2 className="text-2xl font-bold text-[#0B1E2F] text-center mb-4">Onde estamos</h2>
+          <p className="text-gray-600 text-center mb-10">
+            Distribuidora de EPIs localizada em Barra Velha, Santa Catarina.
+            Atendemos empresas e profissionais da região com equipamentos de proteção individual.
+          </p>
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
             <div className="aspect-video w-full">
               <iframe
@@ -138,7 +135,11 @@ export default function Home() {
       {/* Contato */}
       <section id="contato" className="py-16 px-4 bg-[#0B1E2F] text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-6">Contato</h2>
+          <h2 className="text-2xl font-bold mb-4">Contato</h2>
+          <p className="text-gray-300 mb-8">
+            Entre em contato com a Barra Velha EPIs em Barra Velha, SC.
+            Atendimento por WhatsApp ou presencial.
+          </p>
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div>
               <p className="font-medium mb-1">Telefone / WhatsApp</p>
