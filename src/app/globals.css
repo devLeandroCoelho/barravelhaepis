@@ -5,3 +5,11 @@
   --color-accent: #E85D04;
   --color-success: #2D6A4F;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
