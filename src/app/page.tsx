@@ -91,14 +91,18 @@ export default function Home() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-[#0B1E2F] text-center mb-10">Galeria</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {[1,2,3,4,5,6].map((item) => (
-              <div key={item} className="bg-gray-200 rounded-xl aspect-square flex items-center justify-center text-gray-400">
-                <span>Imagem {item}</span>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+              <iframe src="https://www.instagram.com/p/DbRUFMKtQ5w/embed/" height="450" frameBorder="0" scrolling="no" allowFullScreen={false} title="Post Instagram Barra Velha EPIs" className="w-full" />
+            </div>
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+              <iframe src="https://www.instagram.com/p/DZ3XdrrRQPD/embed/" height="450" frameBorder="0" scrolling="no" allowFullScreen={false} title="Post Instagram Barra Velha EPIs" className="w-full" />
+            </div>
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+              <iframe src="https://www.instagram.com/p/DZ3Wqx6R4i8/embed/" height="450" frameBorder="0" scrolling="no" allowFullScreen={false} title="Post Instagram Barra Velha EPIs" className="w-full" />
+            </div>
           </div>
-          <p className="text-center text-sm text-gray-500 mt-4">Fotos dos nossos produtos</p>
+          <p className="text-center text-sm text-gray-500 mt-4">Acompanhe nosso Instagram para mais novidades</p>
         </div>
       </section>
 
@@ -120,7 +124,7 @@ export default function Home() {
               />
             </div>
             <div className="p-6">
-              <p className="text-gray-800 font-medium">Barra Velha — Santa Catarina</p>
+              <p className="text-gray-800 font-medium">Paralela da BR101, nº 360 - São Cristóvão, Barra Velha - SC, 88390-000</p>
               <p className="text-gray-600 text-sm mt-1">Atendimento para empresas e profissionais da região</p>
             </div>
           </div>
