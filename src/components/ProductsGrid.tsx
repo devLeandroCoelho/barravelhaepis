@@ -5,7 +5,7 @@ import Image from 'next/image';
 const products = [
   { name: 'Capacetes', img: '/img/capacete.jpg', alt: 'Capacetes de segurança para trabalho' },
   { name: 'Luvas', img: '/img/luvas.jpg', alt: 'Luvas de proteção industrial' },
-  { name: 'Máscaras', img: '/img/mascara.jpg', alt: 'Máscaras de proteção respiratória' },
+  { name: 'Máscaras', img: '/img/mascara.png', alt: 'Máscaras de proteção respiratória' },
   { name: 'Óculos', img: '/img/oculos.webp', alt: 'Óculos de proteção para trabalho' },
   { name: 'Uniformes', img: '/img/uniforme.webp', alt: 'Uniformes profissionais de segurança' },
   { name: 'Calçados', img: '/img/calçados.webp', alt: 'Calçados de segurança EPI' },
