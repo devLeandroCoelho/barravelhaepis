@@ -22,7 +22,7 @@ export default function Home() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Barra Velha EPIs</h1>
           <p className="text-xl mb-8">Equipamentos de Proteção Individual</p>
-          <p className="text-xl text-[#E85D04] mb-8">
+          <p className="text-2xl text-[#E85D04] mb-8">
             <TypingEffect />
           </p>
         </div>
