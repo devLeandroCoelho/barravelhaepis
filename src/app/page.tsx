@@ -146,11 +146,21 @@ export default function Home() {
             </div>
             <div>
               <p className="font-medium mb-1">Horário</p>
-              <p className="text-sm">Seg a Sex</p>
-              <p className="text-sm">07:30 às 12:00</p>
-              <p className="text-sm">e 13:15 às 17:30</p>
-              <p className="text-sm">Sábado — 07:30 às 12:00</p>
-              <p className="text-sm">Domingo — Fechado</p>
+              <div className="grid grid-cols-3 gap-4 text-left">
+                <div>
+                  <p className="text-sm font-semibold">SEG-SEX:</p>
+                  <p className="text-sm">07:30 às 12:00</p>
+                  <p className="text-sm">13:15 às 17:30</p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold">SÁB:</p>
+                  <p className="text-sm">07:30 às 12:00</p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold">DOM:</p>
+                  <p className="text-sm">FECHADO</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
