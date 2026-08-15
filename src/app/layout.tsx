@@ -8,9 +8,45 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Barra Velha EPIs — Equipamentos de Proteção Individual',
-  description: 'Distribuidora de EPIs em Barra Velha. Qualidade e segurança para sua equipe.',
+  description: 'Distribuidora de EPIs em Barra Velha. Capacetes, luvas, máscaras, óculos, uniformes, calçados e mais. Atendimento para empresas e profissionais da região.',
+  keywords: ['EPI', 'equipamentos de proteção', 'Barra Velha', 'Santa Catarina', 'capacetes', 'luvas', 'máscaras', 'óculos', 'uniformes', 'calçados', 'coletores', 'protetores'],
+  authors: [{ name: 'HTTP200.TI' }],
+  creator: 'HTTP200.TI',
+  publisher: 'Barra Velha EPIs',
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
+  },
+  metadataBase: new URL('https://barravelhaepis.vercel.app'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Barra Velha EPIs — Equipamentos de Proteção Individual',
+    description: 'Distribuidora de EPIs em Barra Velha. Qualidade e segurança para sua equipe. Capacetes, luvas, máscaras, óculos, uniformes, calçados e mais.',
+    url: 'https://barravelhaepis.vercel.app',
+    siteName: 'Barra Velha EPIs',
+    locale: 'pt_BR',
+    type: 'website',
+    images: [
+      {
+        url: '/logo-barravelhaepis.png',
+        width: 800,
+        height: 800,
+        alt: 'Barra Velha EPIs',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Barra Velha EPIs — Equipamentos de Proteção Individual',
+    description: 'Distribuidora de EPIs em Barra Velha. Qualidade e segurança para sua equipe.',
+    images: ['/logo-barravelhaepis.png'],
+  },
   icons: {
     icon: '/logo-barravelhaepis.png',
+    apple: '/logo-barravelhaepis.png',
   },
 };
 
@@ -20,9 +56,48 @@ export const viewport = {
   maximumScale: 1,
 };
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Barra Velha EPIs',
+  description: 'Distribuidora de EPIs em Barra Velha. Equipamentos de proteção individual para empresas e profissionais.',
+  image: 'https://barravelhaepis.vercel.app/logo-barravelhaepis.png',
+  telephone: '+5547991432541',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Paralela da BR101, nº 360 - São Cristóvão',
+    addressLocality: 'Barra Velha',
+    addressRegion: 'SC',
+    postalCode: '88390-000',
+    addressCountry: 'BR',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: -26.6496575,
+    longitude: -48.6872217,
+  },
+  openingHours: [
+    'Mo-Fr 07:30-12:00',
+    'Mo-Fr 13:15-17:30',
+    'Sa 07:30-12:00',
+  ],
+  priceRange: '$$',
+  url: 'https://barravelhaepis.vercel.app',
+  sameAs: [
+    'https://www.instagram.com/barravelhaepis/',
+    'https://api.whatsapp.com/send/?phone=5547991432541',
+  ],
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <header className="fixed top-0 left-0 right-0 z-50 bg-[#0B1E2F] text-white py-3 px-4 shadow-md">
           <div className="max-w-6xl mx-auto flex items-center justify-between">
@@ -53,4 +128,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-
