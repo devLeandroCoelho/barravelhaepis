@@ -3,20 +3,24 @@
 import Image from 'next/image';
 
 export default function Home() {
-  const whatsappNumber = '5548988547455';
-  const whatsappMessage = 'gostaria%20de%20entrar%20em%20contato.%20Peguei%20seu%20n%C3%BAmero%20no%20site%20da%20Barra%20Velha%20EPIs.';
-
   return (
-    <main className="min-h-screen bg-white">
+    <main className="flex-1 bg-white">
       {/* Hero */}
       <section className="bg-[#0B1E2F] text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-sm text-gray-300 mb-2">Desenvolvido por HTTP200.TI</p>
+          <div className="flex justify-center mb-6">
+            <div className="w-44 h-44 md:w-64 md:h-64">
+              <Image
+                src="/logo-barravelhaepis.png"
+                alt="Barra Velha EPIs"
+                width={256}
+                height={256}
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Barra Velha EPIs</h1>
           <p className="text-xl mb-8">Equipamentos de Proteção Individual — qualidade e segurança para sua equipe</p>
-          <a href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} className="bg-[#E85D04] hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-colors">
-            Fale no WhatsApp
-          </a>
         </div>
       </section>
 
@@ -28,8 +32,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Categorias */}
-      <section className="py-16 px-4">
+      {/* Produtos */}
+      <section id="produtos" className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-[#0B1E2F] text-center mb-10">Nossos Produtos</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -48,6 +52,13 @@ export default function Home() {
                 <p className="font-medium text-gray-800">{item.name}</p>
               </div>
             ))}
+          </div>
+          <div className="mt-10 text-center">
+            <a href="/catalogo-barravelhaepis.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#0B1E2F] hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Baixar Catálogo Completo
+            </a>
+            <p className="text-sm text-gray-500 mt-2">46 páginas com todos os produtos e preços</p>
           </div>
         </div>
       </section>
@@ -87,7 +98,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <p className="text-center text-sm text-gray-500 mt-4">Substitua estas imagens pelas fotos dos produtos do Instagram</p>
+          <p className="text-center text-sm text-gray-500 mt-4">Fotos dos nossos produtos</p>
         </div>
       </section>
 
@@ -96,10 +107,17 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-[#0B1E2F] text-center mb-10">Onde estamos</h2>
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-            <div className="aspect-video w-full bg-gray-200 flex items-center justify-center">
-              <a href="https://maps.google.com/?q=Barra+Velha+SC" target="_blank" rel="noopener noreferrer" className="text-[#E85D04] hover:underline font-medium">
-                Ver localização no Google Maps
-              </a>
+            <div className="aspect-video w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.1234567890!2d-48.6872217!3d-26.6496575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d92be0608d4297%3A0xd6597c22b2743fd5!2sBarra%20velha%20comercio%20de%20EPIS!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localização da Barra Velha EPIs"
+              />
             </div>
             <div className="p-6">
               <p className="text-gray-800 font-medium">Barra Velha — Santa Catarina</p>
@@ -116,7 +134,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div>
               <p className="font-medium mb-1">Telefone / WhatsApp</p>
-              <a href={`https://wa.me/${whatsappNumber}`} className="text-[#E85D04] hover:underline">(48) 98854-7455</a>
+              <a href="https://api.whatsapp.com/send/?phone=554791432541&text=Ol%C3%A1%2C%20peguei%20seu%20contato%20no%20site%20da%20Barra%20Velha%20EPIs%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" className="text-[#E85D04] hover:underline">(48) 98854-7455</a>
             </div>
             <div>
               <p className="font-medium mb-1">Instagram</p>
@@ -127,19 +145,8 @@ export default function Home() {
               <p>Seg a Sex — 8h às 18h</p>
             </div>
           </div>
-          <a href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} className="bg-[#E85D04] hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-colors inline-block">
-            Fale no WhatsApp
-          </a>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-8 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-sm">© 2026 Barra Velha EPIs — Todos os direitos reservados</p>
-          <p className="text-xs mt-2">Desenvolvido por <a href="https://http200.ti" className="text-[#E85D04] hover:underline">HTTP200.TI</a></p>
-        </div>
-      </footer>
     </main>
   );
 }

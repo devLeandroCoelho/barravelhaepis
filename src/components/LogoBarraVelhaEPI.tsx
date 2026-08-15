@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function LogoBarraVelhaEPI() {
   return (
     <a href="/" className="flex items-center gap-3">
-      <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-md overflow-hidden">
+      <div className="w-12 h-12 rounded-lg flex items-center justify-center shadow-md overflow-hidden">
         <Image
           src="/logo-barravelhaepis.png"
           alt="Barra Velha EPIs"
