@@ -25,7 +25,7 @@ export default function Home() {
       </section>
 
       {/* Marcas / Credibilidade */}
-      <section className="py-12 px-4 bg-gray-50">
+      <section id="marcas" className="py-12 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-[#0B1E2F] mb-6">Marcas que trabalhamos</h2>
           <p className="text-gray-600">Trabalhamos com as melhores marcas do mercado. Consulte-nos para orçamentos.</p>
@@ -64,7 +64,7 @@ export default function Home() {
       </section>
 
       {/* Diferenciais */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section id="diferenciais" className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-[#0B1E2F] text-center mb-10">Por que escolher a Barra Velha EPIs?</h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -88,7 +88,7 @@ export default function Home() {
       </section>
 
       {/* Galeria */}
-      <section className="py-16 px-4">
+      <section id="galeria" className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-[#0B1E2F] text-center mb-10">Galeria</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -138,7 +138,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div>
               <p className="font-medium mb-1">Telefone / WhatsApp</p>
-              <a href="https://api.whatsapp.com/send/?phone=554791432541&text=Ol%C3%A1%2C%20peguei%20seu%20contato%20no%20site%20da%20Barra%20Velha%20EPIs%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" className="text-[#E85D04] hover:underline">(48) 98854-7455</a>
+              <a href="https://api.whatsapp.com/send/?phone=5547991432541&text=Ol%C3%A1%2C%20peguei%20seu%20contato%20no%20site%20da%20Barra%20Velha%20EPIs%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" className="text-[#E85D04] hover:underline">(47) 99143-2541</a>
             </div>
             <div>
               <p className="font-medium mb-1">Instagram</p>
